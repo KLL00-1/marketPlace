@@ -1,0 +1,96 @@
+@media (max-width: 1330px) {
+  .connect_wallet {
+    position: absolute;
+    top: 0;
+    right: 2vw;
+  }
+  select {
+    background-image: none;
+  }
+}
+@media (max-width: 600px) {
+  .connect_wallet a {
+    padding: 10px 22px;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .head_dog {
+    order: -1;
+  }
+  .head_dog img {
+    max-width: 80%;
+  }
+  .heading_text a {
+    padding: 10px 22px;
+  }
+  .NFT_cards {
+    justify-content: center;
+  }
+  /* ____________section 2_______________ */
+  .discover_nft {
+    margin-top: 10vh;
+  }
+  /* ______footer____________ */
+  footer {
+    margin-top: 150px;
+  }
+
+  .final_content {
+    flex-direction: column;
+  }
+  .spans {
+    order: 1;
+    margin-bottom: 30px;
+  }
+  .img_links a img {
+    max-width: 15%;
+  }
+  .img_links {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .final_logo {
+    order: 2;
+  }
+
+  .img_links,
+  .spans {
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+  }
+  .id {
+    margin-right: 0;
+  }
+}
+@media (max-width: 870px) {
+  /* ____section 2______________ */
+  .search {
+    font-size: calc(var(--index) * 0.9);
+  }
+  .search span {
+    padding-left: 2vw;
+    font-size: calc(var(--index) * 0.9);
+  }
+  .discover_nft input {
+    line-height: 100%;
+    font-size: calc(var(--index) * 1);
+  }
+  .selections {
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  select {
+    width: 200px;
+  }
+  #select {
+    width: 80px;
+  }
+}
