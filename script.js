@@ -30,6 +30,31 @@ setTimeout(() => {
       counter[key].innerHTML = number;
     });
   }
+  // functions for search________________________
+  function dogCommonFunction(property) {
+    for (a = 0; a < dogCommon.length; a++)
+      dogCommon[a].style.display = property;
+  }
+  function dogUncommonFunction(property) {
+    for (b = 0; b < dogUncommon.length; b++)
+      dogUncommon[b].style.display = property;
+  }
+  function dogEpicFunction(property) {
+    for (c = 0; c < dogEpic.length; c++) dogEpic[c].style.display = property;
+  }
+  function catCommonFunction(property) {
+    for (d = 0; d < catCommon.length; d++)
+      catCommon[d].style.display = property;
+  }
+  function catUncommonFunction(property) {
+    for (v = 0; v < catUncommon.length; v++)
+      catUncommon[v].style.display = property;
+  }
+  function catEpicFunction(property) {
+    for (q = 0; q < catEpic.length; q++) catEpic[q].style.display = property;
+  }
+  //________________________________________________
+
   button.addEventListener("click", () => {
     for (i = 0; i < allCard.length; i++) {
       allCard[i].classList.toggle("column_2");
@@ -40,112 +65,111 @@ setTimeout(() => {
 
   selectButton.addEventListener("click", () => {
     if (selectDog.selected && allRar.selected) {
-      for (i = 0; i < dogCommon.length; i++) {
-        dogCommon[i].style.display = "block";
-        dogUncommon[i].style.display = "block";
-        dogEpic[i].style.display = "block";
-        catCommon[i].style.display = "none";
-        catUncommon[i].style.display = "none";
-        catEpic[i].style.display = "none";
+      {
+        dogCommonFunction("block");
+        dogUncommonFunction("block");
+        dogEpicFunction("block");
+        catCommonFunction("none");
+        catUncommonFunction("none");
+        catEpicFunction("none");
       }
     } else if (selectCat.selected && allRar.selected) {
-      for (i = 0; i < dogCommon.length; i++) {
-        dogCommon[i].style.display = "none";
-        dogUncommon[i].style.display = "none";
-        dogEpic[i].style.display = "none";
-        catCommon[i].style.display = "block";
-        catUncommon[i].style.display = "block";
-        catEpic[i].style.display = "block";
+      {
+        dogCommonFunction("none");
+        dogUncommonFunction("none");
+        dogEpicFunction("none");
+        catCommonFunction("block");
+        catUncommonFunction("block");
+        catEpicFunction("block");
       }
     } else if (allPet.selected && selectCommon.selected) {
-      for (i = 0; i < dogCommon.length; i++) {
-        dogCommon[i].style.display = "block";
-        dogUncommon[i].style.display = "none";
-        dogEpic[i].style.display = "none";
-        catCommon[i].style.display = "block";
-        catUncommon[i].style.display = "none";
-        catEpic[i].style.display = "none";
+      {
+        dogCommonFunction("block");
+        dogUncommonFunction("none");
+        dogEpicFunction("none");
+        catCommonFunction("block");
+        catUncommonFunction("none");
+        catEpicFunction("none");
       }
     } else if (allPet.selected && selectUncommon.selected) {
-      for (i = 0; i < dogCommon.length; i++) {
-        dogCommon[i].style.display = "none";
-        dogUncommon[i].style.display = "block";
-        dogEpic[i].style.display = "none";
-        catCommon[i].style.display = "none";
-        catUncommon[i].style.display = "block";
-        catEpic[i].style.display = "none";
+      {
+        dogCommonFunction("none");
+        dogUncommonFunction("block");
+        dogEpicFunction("none");
+        catCommonFunction("none");
+        catUncommonFunction("block");
+        catEpicFunction("none");
       }
     } else if (allPet.selected && selectEpic.selected) {
-      for (i = 0; i < dogCommon.length; i++) {
-        dogCommon[i].style.display = "none";
-        dogUncommon[i].style.display = "none";
-        dogEpic[i].style.display = "block";
-        catCommon[i].style.display = "none";
-        catUncommon[i].style.display = "none";
-        catEpic[i].style.display = "block";
+      {
+        dogCommonFunction("none");
+        dogUncommonFunction("none");
+        dogEpicFunction("block");
+        catCommonFunction("none");
+        catUncommonFunction("none");
+        catEpicFunction("block");
       }
     } else if (selectDog.selected && selectCommon.selected) {
-      for (i = 0; i < dogCommon.length; i++) {
-        dogCommon[i].style.display = "block";
-        dogUncommon[i].style.display = "none";
-        dogEpic[i].style.display = "none";
-        catCommon[i].style.display = "none";
-        catUncommon[i].style.display = "none";
-        catEpic[i].style.display = "none";
+      {
+        dogCommonFunction("block");
+        dogUncommonFunction("none");
+        dogEpicFunction("none");
+        catCommonFunction("none");
+        catUncommonFunction("none");
+        catEpicFunction("none");
       }
     } else if (selectDog.selected && selectUncommon.selected) {
-      for (i = 0; i < dogCommon.length; i++) {
-        dogCommon[i].style.display = "none";
-        dogUncommon[i].style.display = "block";
-        dogEpic[i].style.display = "none";
-        catCommon[i].style.display = "none";
-        catUncommon[i].style.display = "none";
-        catEpic[i].style.display = "none";
+      {
+        dogCommonFunction("none");
+        dogUncommonFunction("block");
+        dogEpicFunction("none");
+        catCommonFunction("none");
+        catUncommonFunction("none");
+        catEpicFunction("none");
       }
     } else if (selectDog.selected && selectEpic.selected) {
-      for (i = 0; i < dogCommon.length; i++) {
-        dogCommon[i].style.display = "none";
-        dogUncommon[i].style.display = "none";
-        dogEpic[i].style.display = "block";
-        catCommon[i].style.display = "none";
-        catUncommon[i].style.display = "none";
-        catEpic[i].style.display = "none";
+      {
+        dogCommonFunction("none");
+        dogUncommonFunction("none");
+        dogEpicFunction("block");
+        catCommonFunction("none");
+        catUncommonFunction("none");
+        catEpicFunction("none");
       }
     } else if (selectCat.selected && selectCommon.selected) {
-      for (i = 0; i < dogCommon.length; i++) {
-        dogCommon[i].style.display = "none";
-        dogUncommon[i].style.display = "none";
-        dogEpic[i].style.display = "none";
-        catCommon[i].style.display = "block";
-        catUncommon[i].style.display = "none";
-        catEpic[i].style.display = "none";
+      {
+        dogCommonFunction("none");
+        dogUncommonFunction("none");
+        dogEpicFunction("none");
+        catCommonFunction("block");
+        catUncommonFunction("none");
+        catEpicFunction("none");
       }
     } else if (selectCat.selected && selectUncommon.selected) {
-      for (i = 0; i < dogCommon.length; i++) {
-        dogCommon[i].style.display = "none";
-        dogUncommon[i].style.display = "none";
-        dogEpic[i].style.display = "none";
-        catCommon[i].style.display = "none";
-        catUncommon[i].style.display = "block";
-        catEpic[i].style.display = "none";
+      {
+        dogCommonFunction("none");
+        dogUncommonFunction("none");
+        dogEpicFunction("none");
+        catCommonFunction("none");
+        catUncommonFunction("block");
+        catEpicFunction("none");
       }
     } else if (selectCat.selected && selectEpic.selected) {
-      for (i = 0; i < dogCommon.length; i++) {
-        dogCommon[i].style.display = "none";
-        dogUncommon[i].style.display = "none";
-        dogEpic[i].style.display = "none";
-        catCommon[i].style.display = "none";
-        catUncommon[i].style.display = "none";
-        catEpic[i].style.display = "block";
+      {
+        dogCommonFunction("none");
+        dogUncommonFunction("none");
+        dogEpicFunction("none");
+        catCommonFunction("none");
+        catUncommonFunction("none");
+        catEpicFunction("block");
       }
-    } else
-      for (i = 0; i < dogCommon.length; i++) {
-        dogCommon[i].style.display = "block";
-        dogUncommon[i].style.display = "block";
-        dogEpic[i].style.display = "block";
-        catCommon[i].style.display = "block";
-        catUncommon[i].style.display = "block";
-        catEpic[i].style.display = "block";
-      }
+    } else {
+      dogCommonFunction("block");
+      dogUncommonFunction("block");
+      dogEpicFunction("block");
+      catCommonFunction("block");
+      catUncommonFunction("block");
+      catEpicFunction("block");
+    }
   });
-}, 2000);
+}, 1000);
