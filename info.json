@@ -1,0 +1,50 @@
+{
+  "0": {
+    "petAndRarity": "dog_common",
+    "faceImage": "https://gateway.pinata.cloud/ipfs/QmPSJdZ1dkt1UWcn2wjUrWfxoXSDYEXhDfHjuA7TgStfBo",
+    "innerLike": "1",
+    "nameAndNumber": "Shiba Pet #001",
+    "rarity": "common",
+    "price": "5"
+  },
+  "1": {
+    "petAndRarity": "dog_uncommon",
+    "faceImage": "https://gateway.pinata.cloud/ipfs/QmPSJdZ1dkt1UWcn2wjUrWfxoXSDYEXhDfHjuA7TgStfBo",
+    "innerLike": "1",
+    "nameAndNumber": "Shiba Pet #002",
+    "rarity": "uncommon",
+    "price": "10"
+  },
+  "2": {
+    "petAndRarity": "dog_epic",
+    "faceImage": "https://gateway.pinata.cloud/ipfs/QmPSJdZ1dkt1UWcn2wjUrWfxoXSDYEXhDfHjuA7TgStfBo",
+    "innerLike": "1",
+    "nameAndNumber": "Shiba Pet #003",
+    "rarity": "epic",
+    "price": "15"
+  },
+  "3": {
+    "petAndRarity": "cat_common",
+    "faceImage": "https://static.tweaktown.com/news/8/7/87825_05_ai-asked-to-show-an-image-of-what-death-looks-like_full.png",
+    "innerLike": "1",
+    "nameAndNumber": "Jesica Pet #004",
+    "rarity": "common",
+    "price": "5"
+  },
+  "4": {
+    "petAndRarity": "cat_uncommon",
+    "faceImage": "https://static.tweaktown.com/news/8/7/87825_05_ai-asked-to-show-an-image-of-what-death-looks-like_full.png",
+    "innerLike": "1",
+    "nameAndNumber": "Jesica Pet #005",
+    "rarity": "uncommon",
+    "price": "10"
+  },
+  "5": {
+    "petAndRarity": "cat_epic",
+    "faceImage": "https://static.tweaktown.com/news/8/7/87825_05_ai-asked-to-show-an-image-of-what-death-looks-like_full.png",
+    "innerLike": "1",
+    "nameAndNumber": "Jesica Pet #006",
+    "rarity": "epic",
+    "price": "15"
+  }
+}
