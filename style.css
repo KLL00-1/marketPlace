@@ -203,13 +203,10 @@ select {
 .NFT_cards {
   max-width: 1690px;
   margin: 50px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  row-gap: 10vh;
-  column-gap: 6.7vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0fr;
+  gap: 10vh;
 }
-
 .NFT_card {
   padding: 13px;
   background: linear-gradient(156.45deg, #0064c0 -6.4%, #0f2b3f 107.68%);
