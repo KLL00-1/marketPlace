@@ -200,6 +200,9 @@ select {
   max-width: 300px;
   max-height: 300px;
 }
+.card_img1:hover {
+  transform: scale(1.5, 1.5);
+}
 .NFT_cards {
   max-width: 1690px;
   margin: 50px auto;
