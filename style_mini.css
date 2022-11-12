@@ -27,9 +27,7 @@
   .heading_text a {
     padding: 10px 22px;
   }
-  .NFT_cards {
-    justify-content: center;
-  }
+
   /* ____________section 2_______________ */
   .discover_nft {
     margin-top: 10vh;
@@ -92,5 +90,26 @@
   }
   #select {
     width: 80px;
+  }
+}
+/* ________display_grid_______ */
+@media (max-width: 1490px) {
+  .NFT_cards {
+    grid-template-columns: 0fr 0fr 0fr;
+    justify-content: center;
+  }
+}
+@media (max-width: 1080px) {
+  .NFT_cards {
+    grid-template-columns: 0fr 0fr;
+    justify-content: center;
+  }
+}
+@media (max-width: 710px) {
+  .NFT_cards {
+    grid-template-columns: 0fr;
+  }
+  .NFT_cards {
+    justify-content: center;
   }
 }
